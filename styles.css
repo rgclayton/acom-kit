@@ -20,6 +20,9 @@
     --type-heading-m-size: 24px;
     --type-heading-m-lh: 30px;
 
+    --type-heading-s-size: 18px;
+    --type-heading-s-lh: 24px;
+
     --type-body-m-size: 18px;
     --type-body-m-lh: 27px;
 
@@ -34,6 +37,13 @@
     /* Grid */
     --grid-mobile-container-width: 83.4%;
     --grid-desktop-container-width: 1200px;
+
+    /* Grid Columns */
+    --grid-column-4-width: 33.333333%;
+    --grid-column-5-width: 41.666667%;
+    --grid-column-6-width: 50%;
+    --grid-column-7-width: 58.333333%;
+    --grid-column-8-width: 66.666667%;
 }
 
 body {
@@ -84,7 +94,30 @@ a.over-background {
     font-size: 14px;
 }
 
+a.button-outline {
+    color: #4B4B4B;
+    border: 2px solid #4B4B4B;
+    background-color: transparent;
+    border-radius: 16px;
+    display: inline-block;
+    line-height: 28px;
+    padding: 0 14px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    transition: background-color 0.2s ease-in, color 0.3s ease-out;
+}
+
+a.button-outline:hover {
+    background-color: #4B4B4B;
+    color: white;
+}
+
 /* Block pre-loads */
 div[class^='marquee'] {
+    display: none;
+}
+
+div[class^='aside'] {
     display: none;
 }

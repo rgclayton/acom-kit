@@ -12,6 +12,11 @@ const config = {
         },
     },
     blocks: {
+        '.aside': {
+            location: '/blocks/aside/',
+            styles: 'styles.css',
+            scripts: 'scripts.js',
+        },
         '.marquee': {
             location: '/blocks/marquee/',
             styles: 'styles.css',
@@ -60,6 +65,7 @@ const loadTheme = (config) => {
 };
 
 const loadBlocks = (config, suppliedEl) => {
+    console.log(config, 'config');
     const parentEl = suppliedEl || document;
 
     const initJs = async (element, block) => {
